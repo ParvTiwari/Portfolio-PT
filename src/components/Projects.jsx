@@ -97,6 +97,7 @@ export default function Projects() {
 
               <a
                 href={project.link}
+                target="_blank"
                 className="inline-block text-sm font-medium text-teal-400 hover:underline"
               >
                 View Project →
