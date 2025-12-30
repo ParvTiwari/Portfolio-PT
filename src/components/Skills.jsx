@@ -60,8 +60,8 @@ export default function SkillsMarquee() {
   }, { scope: containerRef });
 
   return (
-    <section id="skills" ref={containerRef} className="py-16 overflow-hidden bg-transparent scroll-mt-24 md:scroll-mt-28">
-      <h2 className="text-4xl font-bold text-center mb-10 text-slate-800 dark:text-white">
+    <section id="skills" ref={containerRef} className="py-16 overflow-hidden bg-transparent scroll-mt-24 md:scroll-mt-28 dark:text-black">
+      <h2 className="text-4xl font-bold text-center mb-10 text-slate-800 dark:text-black">
         Skills
       </h2>
 
