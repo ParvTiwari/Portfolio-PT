@@ -89,7 +89,7 @@ export default function About() {
         </p>
         
         <div ref={(el) => (textRef.current[3] = el)} className="mt-12 text-center" >
-            <a href="/Parv_Tiwari_Resume.pdf" download
+            <a href="Parv_Tiwari_Résumé.pdf" download
                 className="
                 text-slate-600 dark:text-slate-300
                 font-medium
