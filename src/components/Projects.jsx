@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react"; // Use the official GSAP hook
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,7 +24,7 @@ const projects = [
     title: "Blood Donation App",
     description: "Android app to find nearby blood donors using Firebase Auth, Realtime DB and Google Maps.",
     tech: ["Java", "Android", "Firebase"],
-    link: "#",
+    link: "https://github.com/ParvTiwari/Blood-Donation-App.git",
   },
   {
     title: "Restaurant Management System",
