@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiMongodb, SiFirebase, SiAndroid, SiPython, SiBootstrap, SiTailwindcss, SiExpress, SiRedux, SiC, SiCplusplus, SiMysql, SiPostgresql } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaGithub  } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -29,6 +29,7 @@ const skills = [
   { name: "Java", icon: <FaJava /> },
   { name: "Python", icon: <SiPython /> },
   { name: "Redux", icon: <SiRedux /> },
+  { name: "Github", icon: <FaGithub /> },
 ];
 
 export default function SkillsMarquee() {

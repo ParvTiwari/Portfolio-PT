@@ -10,8 +10,11 @@ export default function About() {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const textRef = useRef([]);
-
+  const clickSoundRef = useRef(null);
+  
   useEffect(() => {
+    clickSoundRef.current = new Audio("/sounds/click.mp3");
+
     const ctx = gsap.context(() => {
       // Heading animation
       gsap.from(headingRef.current, {
@@ -42,6 +45,12 @@ export default function About() {
     return () => ctx.revert();
   }, []);
 
+  const playSound = () => {
+    if (!clickSoundRef.current) return;
+    clickSoundRef.current.currentTime = 0;
+    clickSoundRef.current.play();
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -62,7 +71,7 @@ export default function About() {
           ref={(el) => (textRef.current[0] = el)}
           className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6"
         >
-          I’m{" "}
+          I'm{" "}
           <span className="font-semibold text-slate-800 dark:text-white">
             Parv Tiwari
           </span>
@@ -97,6 +106,7 @@ export default function About() {
                 transition-colors duration-300
                 relative group
                 "
+                onClick={playSound}
             >
                 Download my Resume
                 <span
