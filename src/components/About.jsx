@@ -99,25 +99,12 @@ export default function About() {
         
         <div ref={(el) => (textRef.current[3] = el)} className="mt-12 text-center" >
             <a href="Parv_Tiwari_Résumé.pdf" download
-                className="
-                text-slate-600 dark:text-slate-300
-                font-medium
-                hover:text-slate-800 dark:hover:text-white
-                transition-colors duration-300
-                relative group
-                "
+                className=" text-slate-600 dark:text-slate-300 font-medium hover:text-slate-800 dark:hover:text-white transition-colors duration-300 relative group "
                 onClick={playSound}
             >
                 Download my Resume
                 <span
-                className="
-                    absolute left-1/2 -bottom-1
-                    w-0 h-[1px]
-                    bg-current
-                    transition-all duration-300
-                    group-hover:w-full
-                    group-hover:left-0
-                "
+                className=" absolute left-1/2 -bottom-1 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full group-hover:left-0"
                 />
             </a>
         </div>
