@@ -56,7 +56,7 @@ export default function Contact() {
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-slate-600">
                 <FiMail className="text-teal-400 text-xl" />
-                <span>parvtiwari1@gmail.com</span>
+                <span>parvtiwari0111@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-4 text-slate-600">

@@ -193,14 +193,14 @@ export default function Footer() {
     },
     {
       name: 'Email',
-      url: 'mailto:parvtiwari1@gmail.com',
+      url: 'mailto:parvtiwari0111@gmail.com',
       icon: '✉️',
       label: 'Email',
     },
   ]
 
   const quickLinks = [
-    { label: 'Home', href: '#' },
+    { label: 'Home', href: '#home' },
     { label: 'About', href: '#about' },
     { label: 'Projects', href: '#projects' },
     { label: 'Skills', href: '#skills' },
