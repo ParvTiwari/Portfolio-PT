@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -182,19 +183,19 @@ export default function Footer() {
     {
       name: 'GitHub',
       url: 'https://github.com/parvtiwari',
-      icon: '🐙',
+      icon: <FaGithub />,
       label: 'GitHub',
     },
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/parv-tiwari',
-      icon: '💼',
+      icon: <FaLinkedin />,
       label: 'LinkedIn',
     },
     {
       name: 'Email',
       url: 'mailto:parvtiwari0111@gmail.com',
-      icon: '✉️',
+      icon: <FaEnvelope />,
       label: 'Email',
     },
   ]
@@ -270,7 +271,7 @@ export default function Footer() {
                   ref={(el) => {
                     if (el) socialRef.current[index] = el
                   }}
-                  className="social-icon relative z-10 w-12 h-12 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-xl hover:border-teal-500 hover:bg-teal-500/10 transition-all duration-300 cursor-pointer"
+                  className="social-icon relative z-10 w-12 h-12 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-xl hover:border-teal-500 hover:bg-teal-500/10 transition-all duration-300 cursor-pointer text-white"
                   title={link.label}
                   aria-label={link.label}
                 >
