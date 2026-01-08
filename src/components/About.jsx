@@ -55,7 +55,7 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="min-h-screen px-6 md:px-20 py-16 md:py-20 bg-background scroll-mt-24 md:scroll-mt-28"
+      className="min-h-screen px-6 md:px-20 py-16 md:py-20 bg-background scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-transparent via-white/20 to-transparent"
     >
       <div className="max-w-4xl mx-auto">
         {/* Heading */}

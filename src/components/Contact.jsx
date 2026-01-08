@@ -33,7 +33,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className=" relative px-6 md:px-20 pt-16 md:pt-20 pb-8 bg-gradient-to-b from-transparent via-teal-500/5 to-teal-500/10 border-t border-slate-200/10 overflow-hidden scroll-mt-24 md:scroll-mt-28 dark:text-black"
+      className=" relative px-6 md:px-20 py-20 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-white/10 scroll-mt-24 md:scroll-mt-28 "
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
@@ -45,27 +45,27 @@ export default function Contact() {
           {/* Left Info */}
           <div
             ref={(el) => (itemsRef.current[0] = el)}
-            className="space-y-6"
+            className="space-y-6 dark:font-semibold"
           >
-            <p className="text-slate-600 text-lg leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
               I'm always open to discussing new projects, internship
               opportunities, or collaborations. Feel free to reach out —
               I'll get back to you as soon as possible.
             </p>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-4 text-slate-600">
-                <FiMail className="text-teal-400 text-xl" />
+              <div className="flex items-center gap-4 text-slate-600 dark:text-slate-300">
+                <FiMail className="text-teal-400 dark:text-teal-200 text-xl" />
                 <span>parvtiwari0111@gmail.com</span>
               </div>
 
-              <div className="flex items-center gap-4 text-slate-600">
-                <FiPhone className="text-teal-400 text-xl" />
+              <div className="flex items-center gap-4 text-slate-600 dark:text-slate-300">
+                <FiPhone className=" text-teal-400 dark:text-teal-200 text-xl" />
                 <a href="tel:+919285121000">+91 92851 21000</a>
               </div>
 
-              <div className="flex items-center gap-4 text-slate-600">
-                <FiMapPin className="text-teal-400 text-xl" />
+              <div className="flex items-center gap-4 text-slate-600 dark:text-slate-300">
+                <FiMapPin className="text-teal-400 dark:text-teal-200 text-xl" />
                 <span>Indore, India</span>
               </div>
             </div>
@@ -73,24 +73,24 @@ export default function Contact() {
 
           <form
             ref={(el) => (itemsRef.current[1] = el)}
-            className="bg-white/5 backdrop-blur-md border border-slate-200/10 rounded-2xl p-6 space-y-4"
+            className="bg-white/5 dark:bg-white/8 backdrop-blur-md border border-slate-200/10 rounded-2xl p-6 space-y-4 dark:text-white"
           >
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full bg-transparent border border-slate-300/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400"
+              className="w-full bg-transparent border border-slate-300/20 dark:border-slate-300/40 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400"
             />
 
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full bg-transparent border border-slate-300/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400"
+              className="w-full bg-transparent border border-slate-300/20 dark:border-slate-300/40 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400"
             />
 
             <textarea
               rows="4"
               placeholder="Your Message"
-              className="w-full bg-transparent border border-slate-300/20 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 resize-none"
+              className="w-full bg-transparent border-slate-300/20 dark:border border-slate-300/40 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-teal-400 resize-none"
             />
 
             <button

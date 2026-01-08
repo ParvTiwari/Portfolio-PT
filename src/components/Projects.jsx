@@ -62,7 +62,7 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="px-6 md:px-20 py-16 md:py-20 bg-background scroll-mt-24 md:scroll-mt-28"
+      className="px-6 md:px-20 py-16 md:py-20 bg-background scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-transparent via-white/10 to-transparent"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="font-script text-5xl md:text-6xl text-teal-400 mb-12">
