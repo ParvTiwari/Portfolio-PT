@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = ["Home", "About", "Skills", "Projects", "Contact"];
+  const links = ["Home", "About", "Skills", "Projects", "Education", "Contact"];
 
   return (
     <nav className="w-full bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 font-sans">
