@@ -93,15 +93,18 @@ export default function Education() {
                 {/* Card */}
                 <div className="w-full">
                   <div className=" rounded-2xl p-6 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none ">
-                    {/* Duration */}
-                    <span className=" inline-block mb-3 px-4 py-1 text-sm font-medium rounded-full bg-slate-100 text-slate-600 dark:bg-white/10 dark:text-white/70 ">
-                      {item.duration}
-                    </span>
+                    
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 gap-2">
+                      {/* Duration */}
+                      <span className="order-1 md:order-2 w-fit px-4 py-1 text-sm font-medium rounded-full bg-slate-100 text-slate-600 dark:bg-white/10 dark:text-white/70">
+                        {item.duration}
+                      </span>
 
-                    {/* Title */}
-                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
-                      {item.title}
-                    </h3>
+                      {/* Title */}
+                      <h3 className="order-2 md:order-1 text-xl font-semibold text-slate-900 dark:text-white">
+                        {item.title}
+                      </h3>
+                    </div>
 
                     {/* Institution */}
                     <p className="mt-1 text-base font-medium text-slate-600 dark:text-slate-300">
