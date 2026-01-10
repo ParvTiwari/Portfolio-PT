@@ -41,21 +41,6 @@ export default function Education() {
 
   useEffect(() => {
     gsap.fromTo(
-      sectionRef.current,
-      { opacity: 0, y: 80 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-        },
-      }
-    );
-
-    gsap.fromTo(
       cardsRef.current,
       { opacity: 0, y: 40 },
       {
@@ -76,65 +61,62 @@ export default function Education() {
     <section
       ref={sectionRef}
       id="education"
-      className=" relative py-28 px-6 md:px-20 py-20 bg-slate-50 dark:bg-[#0b0f14] border-t border-slate-200 dark:border-white/10 scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-transparent via-white/5 to-transparent "
+      className=" relative py-28 px-6 md:px-20 bg-slate-50 dark:bg-[#0b0f14] border-t border-slate-200 dark:border-white/10 scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-transparent via-white/5 to-transparent "
     >
-      <div className="max-w-5xl mx-auto px-6">
-        
-        <h2 className=" font-script text-5xl md:text-6xl text-teal-400 mb-12 tracking-tight ">
+      <div className="max-w-5xl mx-auto">
+        {/* Heading */}
+        <h2 className="font-script text-5xl md:text-6xl text-teal-400 mb-16">
           Education
         </h2>
 
-        <div className=" absolute left-1/2 top-[220px] h-[calc(100%-260px)] w-[2px] bg-slate-300 dark:bg-white/10 -translate-x-1/2 hidden md:block " />
+        {/* Timeline wrapper */}
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-[56px] top-0 h-full w-[2px] bg-slate-300 dark:bg-white/10 hidden md:block" />
 
-        <div className="space-y-12 md:space-y-4">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              ref={(el) => (cardsRef.current[index] = el)}
-              className={`relative flex ${
-                index % 2 === 0 ? "md:justify-start" : "md:justify-end"
-              }`}
-            >
-              {/* Card */}
-              <div className="w-full md:w-[45%]">
-                <div className=" rounded-2xl p-6 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none ">
-                  {/* Duration */}
-                  <span className="
-                    inline-block mb-3 px-4 py-1 text-sm font-medium rounded-full
-                    bg-slate-100 text-slate-600
-                    dark:bg-white/10 dark:text-white/70
-                  ">
-                    {item.duration}
-                  </span>
+          <div className="space-y-12">
+            {items.map((item, index) => (
+              <div
+                key={index}
+                ref={(el) => (cardsRef.current[index] = el)}
+                className="grid grid-cols-1 md:grid-cols-[112px_1fr] gap-6 md:gap-8 items-stretch"
+              >
+                {/* Timeline icon */}
+                <div className="hidden md:flex items-center justify-center">
+                  <div
+                    className=" w-11 h-11 rounded-full bg-white dark:bg-black border border-slate-300 dark:border-white/20 flex items-center justify-center text-slate-700 dark:text-white "
+                  >
+                    {item.icon}
+                  </div>
+                </div>
 
-                  {/* Title */}
-                  <h3 className="
-                    text-xl font-semibold
-                    text-slate-900 dark:text-white
-                  ">
-                    {item.title}
-                  </h3>
+                {/* Card */}
+                <div className="w-full">
+                  <div className=" rounded-2xl p-6 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 shadow-sm dark:shadow-none ">
+                    {/* Duration */}
+                    <span className=" inline-block mb-3 px-4 py-1 text-sm font-medium rounded-full bg-slate-100 text-slate-600 dark:bg-white/10 dark:text-white/70 ">
+                      {item.duration}
+                    </span>
 
-                  {/* Institution */}
-                  <p className=" mt-1 text-base font-medium text-slate-600 dark:text-slate-300 ">
-                    {item.institution}
-                  </p>
+                    {/* Title */}
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+                      {item.title}
+                    </h3>
 
-                  {/* Grade */}
-                  <p className={`mt-4 text-lg font-bold ${item.color}`}>
-                    {item.grade}
-                  </p>
+                    {/* Institution */}
+                    <p className="mt-1 text-base font-medium text-slate-600 dark:text-slate-300">
+                      {item.institution}
+                    </p>
+
+                    {/* Grade */}
+                    <p className={`mt-4 text-lg font-bold ${item.color}`}>
+                      {item.grade}
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              {/* Timeline Dot */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-8 hidden md:flex">
-                <div className=" w-11 h-11 rounded-full bg-white dark:bg-black border border-slate-300 dark:border-white/20 flex items-center justify-center text-slate-700 dark:text-white ">
-                  {item.icon}
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
