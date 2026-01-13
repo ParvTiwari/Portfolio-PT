@@ -63,7 +63,7 @@ export default function Education() {
       id="education"
       className=" relative py-28 px-6 md:px-20 bg-slate-50 dark:bg-[#0b0f14] border-t border-slate-200 dark:border-white/10 scroll-mt-24 md:scroll-mt-28 bg-gradient-to-b from-transparent via-white/5 to-transparent "
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="font-script text-5xl md:text-6xl text-teal-400 mb-16">
           Education
