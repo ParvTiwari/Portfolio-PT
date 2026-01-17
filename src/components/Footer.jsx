@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import VisitorCounter from './VisitorCounter'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -303,6 +304,9 @@ export default function Footer() {
             Deployed on <span className="text-teal-400 font-semibold">Vercel</span> • Source on{' '}
             <span className="text-teal-400 font-semibold">GitHub</span>
           </p>
+          <div className="flex justify-center mt-6">
+            <VisitorCounter />
+          </div>
         </div>
 
         {/* Subtle gradient background */}
