@@ -304,9 +304,9 @@ export default function Footer() {
             Deployed on <span className="text-teal-400 font-semibold">Vercel</span> • Source on{' '}
             <span className="text-teal-400 font-semibold">GitHub</span>
           </p>
-          <div className="flex justify-center mt-6">
+          {/* <div className="flex justify-center mt-6"> */}
             <VisitorCounter />
-          </div>
+          {/* </div> */}
         </div>
 
         {/* Subtle gradient background */}
